@@ -77,7 +77,7 @@ module HuffmanTree = struct
         then []
       else let x = text.[i] in
             let l =  (CharMap.find x code_map) in 
-            l @ (encode_acc (i-1))
+            (encode_acc (i-1)) @ l 
     in encode_acc (String.length text -1)
 
 
