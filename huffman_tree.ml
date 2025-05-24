@@ -20,7 +20,7 @@ let occurences (text : string) =
   in occurences_aux (n-1) occ_map;;
         
 
-module HuffmanTree = struct
+module Huffman = struct
 
   type huffmantree = 
     | Leaf of char
